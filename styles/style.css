@@ -24,6 +24,7 @@ header nav#nav-bar {
 	position: fixed;
     border-bottom: 0.1px solid #7e7d7d;
 	top: 0;
+    z-index: 100;
 }
 
 header nav ul {
@@ -198,4 +199,130 @@ header nav a #nav-logo {
 
 .yeezy-app-container img {
     width: 70%;
+}
+
+@media screen and (max-width: 390px) {
+
+    header nav ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    header nav ul li {
+        margin-left: 1.5vh;
+    }
+    
+    header nav a {
+        font-size: 1.7vh;
+        text-decoration: none;
+        color: #1A1A1A;
+    } 
+    
+    header nav a #nav-logo {
+        height: 2.8vh;
+        margin: 0.8vh;
+    }
+
+    .main-page h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 7.4vh;
+    }
+
+    #features {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        height: 94vh;
+    }
+    
+    #features h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        position: relative;
+        font-weight: 500;
+        margin: 1.9vh;
+    }
+
+    .features-main-container {
+        display: block; 
+    }
+
+    .features-feature-icon {
+        height: 6vh;
+    }
+
+    .features-feature-container {
+        width: 85%;
+        padding: 2vh 2.6vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .features-feature-container h3 {
+        margin-bottom: 10px;
+        color: #00B172;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 2.6vh;
+    }
+
+    header nav#nav-bar {
+        width: 100%;
+        height: 6.3vh;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* for some reason fixed makes it work :O */
+        position: fixed;
+        border-bottom: 0.1px solid #7e7d7d;
+        top: 0;
+    }
+
+    #yeezy {
+        background-size: 0px;
+        display: flex;
+        flex-direction: column;
+        height: 844px;
+        color: white;
+        justify-content: center;
+        margin: 25vh 0vh;
+    }
+
+    #yeezy h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 0px 2vh;
+        padding: 0vh 0vh 0vh 0vh;
+    }
+
+    .yeezy-main-container {
+        display: block;
+    }
+
+    .yeezy-sub-container {
+        margin: 5vh 0vh 5vh 0vh;
+    }
+
+    .yeezy-feature-container {
+        width: 85%;
+        padding: 1vh 0vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .yeezy-feature-container p {
+        width: 80%;
+        font-size: 1.3rem;
+        width: 100%;
+    }
+
+    .yeezy-feature-container h3 {
+        padding: 3vh 0vh;
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
 }
