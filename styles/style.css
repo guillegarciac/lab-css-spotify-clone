@@ -20,8 +20,9 @@ header nav#nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* for some reason sticky is not working */
-	position: sticky;
+    /* for some reason fixed makes it work :O */
+	position: fixed;
+    border-bottom: 0.1px solid #7e7d7d;
 	top: 0;
 }
 
